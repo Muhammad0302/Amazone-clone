@@ -9,7 +9,7 @@ import { auth } from "./components/firebase";
 import { useEffect } from "react";
 import Payment from "./components/Payment";
 function App() {
-  const [{}, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
   useEffect(() => {
     // will only run once when the app component loads...
 
